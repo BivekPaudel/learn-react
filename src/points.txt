@@ -1,0 +1,14 @@
+how to call variables inside?
+use jsx insted of is if that file is used to make component
+a variable can store even a tag
+
+object are not valid as react child. we cannot write objects inside tag.
+
+string = show
+number = show
+boolean  = is not show
+null  = is not
+undefined is not shown
+array will show but it remove w
+object we can not use object inside tag
+
