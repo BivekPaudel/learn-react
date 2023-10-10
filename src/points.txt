@@ -12,3 +12,52 @@ undefined is not shown
 array will show but it remove w
 object we can not use object inside tag
 
+           rules of hooks(hook is a function)
+
+           useEffect()
+    1.hook are function whose name starts with small use
+    2.hook must be defined inside component
+    3.it must be define before return
+    4.use effect run for the first dependencies
+    5.but  from second render it depends on dependency if one of variable inside dependency changes the useEffect function will run
+
+
+  useEffect(fun); (without dependency)
+         useEffect will run for every render
+         useEffect(fun,dependency)
+         useEffect(fun, []) // it will only run for first render
+         useEffect(fun,[count1])// it will run fro first render but from seconde render if count1 change the useEffect will run
+         useEffect(fun,[count1,count2])// it will run for first render but from seconde render if count1 or count2  change the useEffect will run
+
+// use effect is asynchronous function, it means it executes at last.
+
+clean up function
+clean up function is the function return by useEffect
+  // clean up function does not execute in first render
+  // but from second render
+  //when useEffect function gets executed first it search weather clean up  function exist or not
+  // if clean up function exist it will run first  then other code of useEffect will run
+
+  // when component gets unmount(hide) nothing gets executed except clean up function
+
+  Invalidation
+  eeuta api hit handa aarko api pani api hit hanna parxa vane teslai nai invalidation vaninxa
+  
+tyepes of url (? vanda aagadi ko lai route ra pachadi ko lai query)
+localhost:3000/contact/2345     ?    name:nitan & age=22 & address = gagalphedi
+route                                         query
+base url (localhost:3000)                     query parameter  (name:nitan & age=22 & address = gagalphedi)
+route parameter (/contact/2345)
+
+
+
+while selecting component it sees route it does not see query
+
+  
+
+
+
+
+
+
+
